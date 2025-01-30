@@ -5,6 +5,10 @@ import os
 from fpdf import FPDF
 from IPython.display import Markdown
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # Set API Keys
 st.sidebar.title("API Key Configuration")
 os.environ["SERPER_API_KEY"] = st.sidebar.text_input("Enter Serper API Key:", type="password")
