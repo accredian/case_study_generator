@@ -1,7 +1,5 @@
 streamlit
 crewai
 crewai_tools
-python==3.10
-chromadb==0.5.23
 pysqlite3-binary
-sqlite3==3.35.0
+
