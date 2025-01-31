@@ -1,4 +1,3 @@
-import sqlite3
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
@@ -7,8 +6,6 @@ import streamlit as st
 from crewai import Agent, Task, Crew
 from crewai_tools import SerperDevTool, ScrapeWebsiteTool
 import os
-from fpdf import FPDF
-from IPython.display import Markdown
 
 
 # Set API Keys
